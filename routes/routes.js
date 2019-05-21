@@ -42,7 +42,7 @@ router.post("/save", function(req, res) {
 //view saved articles
 router.get("/saved",function(req, res){
     db.Article.find({}).then(function(data){
-        console.log(data);
+        //console.log(data);
         res.render("saved",{result: data});
 
     });
