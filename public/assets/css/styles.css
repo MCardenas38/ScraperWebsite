@@ -1,0 +1,37 @@
+#head{
+    text-align: center;
+    height: 450px;
+    width: 100%;
+    background-image: url("../images/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px white;
+}
+
+.boxes{
+    border: 5px double black;
+    padding-left: 17px;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+
+button{
+    padding: 10px;
+}
+
+.notes {
+    color: white;
+    text-decoration: none;
+}
+
+.center{
+    text-align: center;
+}
+
+.push{
+    padding-right: 10%;
+}

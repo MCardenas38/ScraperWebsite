@@ -1,0 +1,23 @@
+<h1>Notes</h1>
+<h3>{{data.title}}</h3>
+<br><br>
+<div class="container center">
+    {{#each data.notes}}
+    <div class="row">
+        <div class="col-m push">
+            <p>{{note}}</p>
+        </div> 
+        <div class="col-m">
+            <button type="button" class="btn btn-danger delete" data-key={{_id}}>Delete</button>
+        </div>
+    </div>
+    {{/each}}
+
+    <br><br>
+    <h2>Add a note...</h2>
+    <textarea id="note" rows="2" cols="70" placeholder="Read later....">
+    </textarea>
+</div>
+<button style="float: right;" id="submit" type="button" data-key="{{data._id}}" class="btn btn-light">Submit</button>
+
+<br><br>

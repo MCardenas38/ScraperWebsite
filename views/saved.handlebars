@@ -1,0 +1,17 @@
+<h1 style="text-decoration: underline;">Your Saved Articles</h1>
+
+{{#each result}}
+    <div class="row boxes">
+        <div class="row">
+            <div class="col-m">
+                <h1>{{title}}</h1>
+                <p><a href={{link}}>{{link}}</a></p>
+            </div>
+            {{!-- <div class="col-m-1"></div> --}}
+            <div class="col-m" style="float: left;">
+                <a href="/notes/{{_id}}" class="notes"><button class="btn btn-primary">Notes</button></a>
+                <button class="btn btn-danger delarch" data-key={{_id}}>Delete</button>
+            </div>
+        </div>
+    </div>
+{{/each}}
